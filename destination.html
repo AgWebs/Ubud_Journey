@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubud Journey - Destination</title>
+    <link rel="icon" type="image/x-icon" href="img/logo/logo_icon.png">
+    <!-- STYLE CSS START -->
+    <link rel="stylesheet" href="destination.css">
+    <!-- GOOGLE FONT START -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Salsa&family=Shojumaru&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Salsa&family=Shojumaru&display=swap');
+    </style>
+    <!-- GOOGLE FONT END -->
+
+    <!-- FONTAWESOME START -->
+    <script src="https://kit.fontawesome.com/5259bc4785.js" crossorigin="anonymous"></script>
+    <!-- FONTAWESOME END -->
+    <!-- STYLE CSS END -->
+
+    <!-- FLICKITY START -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- FLICKITY END -->
+
+    <!-- SCRIPT JQUERY START -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- SCRIPT JQUERY END -->
+</head>
+<body>
+
+    <!-- PRELOADER START -->
+    <div id="preloader"></div>
+    <!-- PRELOADER END -->
+
+    <!-- NAVIGATION START -->
+    <header class="nav-wrapper">
+        <nav>
+            <a class="logo" href="index.html"><img src="img/logo/logo_ubud_white.png" alt=""></a>
+            <ul>
+                <li class="hover">
+                    <a href="index.html"><span>Home</span></a>
+                </li>
+                <li class="hover">
+                    <a href="destination.html"><span>Destination</span></a>
+                </li>
+                <li class="hover">
+                    <a href="culinary.html"><span>Culinary</span></a>
+                </li>
+                <li class="hover">
+                    <a href="culture.html"><span>Culture</span></a>
+                </li>
+                <li class="hover">
+                    <a href="about.html"><span>About</span></a>
+                </li>
+                <li class="hover">
+                    <a href="contact.html"><span>Contact</span></a>
+                </li>
+                <div class="cursor"></div>
+            </ul>
+        </nav>
+    </header>
+    <!-- NAVIGATION END -->
+
+   <!-- MAIN START -->
+   <main id="main" >
+    <!-- CROUSEL SECTION START -->
+    <section class="carousel-section">
+        <div class="hero-slider" data-carousel>
+            <div class="carousel-cell hero-cell" style="background-image:url(img/destination_img/campuhan_ridge_walk.jpeg);">
+            <div class="overlay"></div>
+            <div class="slide-content">
+                <div class="mask">
+                <h2 class="title">Ubud</h2>
+                </div>
+                <div class="divider"></div>
+                <div class="mask">
+                <p class="caption">Campuhan Ridge Walk.</p>
+                <a target="_blank" href="https://www.indonesia.travel/id/id/destinasi/bali-nusa-tenggara/campuhan-ridge-walk-destinasi-bak-lukisan-alam-di-bali.html" target="_blank" class="btn">Read more</a>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-cell hero-cell" style="background-image:url(img/destination_img/monkey_forest_ubud.jpeg);">
+            <div class="overlay"></div>
+            <div class="slide-content">
+                <div class="mask">
+                <h2 class="title">Ubud</h2>
+                </div>
+                <div class="divider"></div>
+                <div class="mask">
+                <p class="caption">Monkey Forest Ubud.</p>
+                <a target="-blank" href="https://monkeyforestubud.com/" target="_blank" class="btn">Read more</a>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-cell hero-cell" style="background-image:url(img/destination_img/tegalalang_rice.jpeg);">
+            <div class="overlay"></div>
+            <div class="slide-content">
+                <div class="mask">
+                <h2 class="title">Ubud</h2>
+                </div>
+                <div class="divider"></div>
+                <div class="mask">
+                <p class="caption">Tegalalang Rice Terraces</p>
+                <a target="-blank" href="https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/ubud/tegallalang-rice-terrace-a-charm-of-the-green-in-ubud.html" target="_blank" class="btn">Read more</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- CROUSEL SECTION END -->
+
+    <!-- BACKGROUND SECTION START -->
+    <section class="background-img-section">
+        <div class="background-img">
+            <img src="img/background_img/background_img_white.png" alt="">
+        </div>
+        <h1>With breathtaking scenery, rich history, and exciting tourist destinations, your trip to Ubud will be unforgettable. </h1>
+    </section>
+    <!-- BACKGROUND SECTION END -->
+
+    <!-- COMPLETE DES SECTION START -->
+    <section class="complete-des-section">
+        <div class="line-container-center">
+            <span class="line"></span><h3 class="text-royal">tourist destinations</h3>
+        </div>
+        <div class="des-section-text">
+            <h1>tourist destinations that you shouldn't miss</h1>
+        </div>
+        <div class="des-button-group">
+            <div class="des-button-container">
+                <button class="des-button focus" data-filter='.des-items'><img src="img/button_img/all_ticket.png" alt=""><p>All</p><img src="" alt=""></button>
+                <button class="des-button" data-filter='.with-ticket'><img src="img/button_img/ticket.png" alt=""><p>With Ticket</p></button>
+                <button class="des-button" data-filter='.without-ticket'><img src="img/button_img/no_ticket.png" alt=""><p>Without Ticket</p></button>
+            </div>
+        </div>
+        <div onclick="viewDes()" class="des-section container">
+            
+            <a href="#" onclick="description('campuhan')">
+                <div class="des-items mix with-ticket">
+                    <div class="des-img-thumb">
+                        <img src="img/destination_img/campuhan_ridge_walk1.jpeg" alt="">
+                    </div>
+                    <div class="des-items-p">
+                        <h1>Campuhan Ridge Walk</h1>
+                        <p>Campuhan Ridge Walk is a popular trekking trail in Ubud, Bali, offering...</p>
+                        <div class="des-item-bottom">
+                            <div class="des-bottom-img"><img src="img/button_img/ticket.png" alt=""><h2>Rp 2.000</h2></div>
+                            <p><i class="fa-solid fa-location-dot"></i>Kec. Ubud</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" onclick="description('monkey')">
+                <div class="des-items mix with-ticket">
+                    <div class="des-img-thumb">
+                        <img src="img/destination_img/monkey-forest1.jpeg" alt="">
+                    </div>
+                    <div class="des-items-p">
+                        <h1>Sacred Monkey Forest Sanctuary</h1>
+                        <p>Sacred Monkey Forest Sanctuary (Ubud Monkey Forest) is one of the...</p>
+                        <div class="des-item-bottom">
+                            <div class="des-bottom-img"><img src="img/button_img/ticket.png" alt=""><h2>Rp 60.000</h2></div>
+                            <p><i class="fa-solid fa-location-dot"></i>Kec. Ubud</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" onclick="description('palace')">
+                <div class="des-items mix without-ticket">
+                    <div class="des-img-thumb">
+                        <img src="img/destination_img/ubud_palace.jpeg" alt="">
+                    </div>
+                    <div class="des-items-p">
+                        <h1>Ubud Palace</h1>
+                        <p>Ubud Palace (Puri Saren Agung) is a royal palace located in the center of Ubud and is one of the...</p>
+                        <div class="des-item-bottom">
+                            <div class="des-bottom-img"><img src="img/button_img/no_ticket.png" alt=""></div>
+                            <p><i class="fa-solid fa-location-dot"></i>Kec. Ubud</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" onclick="description('tegalalang')">
+                <div class="des-items mix with-ticket">
+                    <div class="des-img-thumb">
+                        <img src="img/destination_img/tegalalang_rice.jpeg" alt="">
+                    </div>
+                    <div class="des-items-p">
+                        <h1>Tegalalang Rice Terraces</h1>
+                        <p>The Tegalalang Rice Terraces is one of the most iconic and beautiful rice terrace landscapes in...</p>
+                        <div class="des-item-bottom">
+                            <div class="des-bottom-img"><img src="img/button_img/ticket.png" alt=""><h2>Rp 10.000</h2></div>
+                            <p><i class="fa-solid fa-location-dot"></i>Kec. Tegallalang</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" onclick="description('saraswati')">
+                <div class="des-items mix with-ticket">
+                    <div class="des-img-thumb">
+                        <img src="img/destination_img/pura_taman_saraswati1.jpeg" alt="">
+                    </div>
+                    <div class="des-items-p">
+                        <h1>Pura taman saraswati</h1>
+                        <p>Taman Saraswati Temple is a beautiful water temple in Ubud, Bali, dedicated to the Goddess Saraswati...</p>
+                        <div class="des-item-bottom">
+                            <div class="des-bottom-img"><img src="img/button_img/ticket.png" alt=""><h2>Rp 50.000</h2></div>
+                            <p><i class="fa-solid fa-location-dot"></i>Kec. Ubud</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" onclick="description('museum')">
+                <div class="des-items mix with-ticket">
+                    <div class="des-img-thumb">
+                        <img src="img/destination_img/museum_blanco_renaissance.jpeg" alt="">
+                    </div>
+                    <div class="des-items-p">
+                        <h1>Museum Blanco Renaissance</h1>
+                        <p>The Blanco Renaissance Museum is an art museum located in Ubud, Bali...</p>
+                        <div class="des-item-bottom">
+                            <div class="des-bottom-img"><img src="img/button_img/ticket.png" alt=""><h2>Rp 100.000</h2></div>
+                            <p><i class="fa-solid fa-location-dot"></i>Kec. Ubud</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" onclick="description('goa')">
+                <div class="des-items mix with-ticket">
+                    <div class="des-img-thumb">
+                        <img src="img/destination_img/goa_gajah.jpg" alt="">
+                    </div>
+                    <div class="des-items-p">
+                        <h1>Elephant Cave</h1>
+                        <p>Goa Gajah, also known as Elephant Cave, is one of the ancient archaeological sites and temples located in...</p>
+                        <div class="des-item-bottom">
+                            <div class="des-bottom-img"><img src="img/button_img/ticket.png" alt=""><h2>Rp 50.000</h2></div>
+                            <p><i class="fa-solid fa-location-dot"></i>Kec. Blahbatuh</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" onclick="description('pasar')">
+                <div class="des-items mix without-ticket">
+                    <div class="des-img-thumb">
+                        <img src="img/destination_img/pasar_seni_ubud.jpeg" alt="">
+                    </div>
+                    <div class="des-items-p">
+                        <h1>Ubud Art Market</h1>
+                        <p>Ubud Art Market is a handicraft and art center located in the heart of Ubud, Bali...</p>
+                        <div class="des-item-bottom">
+                            <div class="des-bottom-img"><img src="img/button_img/no_ticket.png" alt=""></div>
+                            <p><i class="fa-solid fa-location-dot"></i>Kec. Ubud</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+    <!-- COMPLETE DES SECTION END -->
+
+    <!-- RECOMENDATION SECTION START -->
+    <section class="recomendation-section">
+        <div class="line-container-left">
+            <span class="line"></span><h3 class="text-royal">Get inspired</h3>
+        </div>
+        <div class="rec-text">
+            <h1>Other ideas for your trip</h1>
+            <p>Do you want some more suggestions for your holidays?</p>
+        </div>
+        <div class="rec-img-top">
+            <img src="img/yoga_img/yoga.jpeg" alt="">
+            <div class="rec-item">
+                <h1>Time for reflection retreats to nurture your body and mind</h1>
+                <a href="/culture.html"><button>View More</button></a>
+            </div>
+        </div>
+        <div class="rec-img-bottom">
+            <div class="img-bottom">
+               <a href="/destination.html">
+                <div class="rec-b-item">
+                    <div class="rec-b-top">
+                        <img src="img/destination_img/campuhan_ridge_walk4.jpg" alt="">
+                    </div>
+                    <div class="rec-b-bottom">
+                        <h1>Tourist Destination </h1>
+                        <p>Mesmerized by its natural beauty</p>
+                    </div>
+                </div>
+               </a>
+               <a href="/culinary.html">
+                <div class="rec-b-item">
+                    <div class="rec-b-top">
+                        <img src="img/culinary_img/sate_kakul.jpg" alt="">
+                    </div>
+                    <div class="rec-b-bottom">
+                        <h1>Local Culinary </h1>
+                        <p>Experience local culinary delights </p>
+                    </div>
+                </div>
+               </a>
+               <a href="/culture.html">
+                <div class="rec-b-item">
+                    <div class="rec-b-top">
+                        <img src="img/culture_img/mesabatan_api_ubud.webp" alt="">
+                    </div>
+                    <div class="rec-b-bottom">
+                        <h1>Cultural Exploration </h1>
+                        <p>mesmerized by the cultural beauty of Ubud</p>
+                    </div>
+                </div>
+               </a>
+            </div>
+        </div>
+    </section>
+    <!-- RECOMENDATION SECTION END -->
+
+    <!-- RELAXATION, ART AND FESTIVAL START -->
+    <section class="raf-section">
+        <div class="line-container-left">
+            <span class="line"></span><h3 class="text-royal">relaxation & events</h3>
+        </div>
+        <div class="raf-text-top">
+            <h1>enjoy activities and events in Ubud</h1>
+        </div>
+        <div class="raf-img-bottom">
+            <div class="raf-img">
+                <div class="raf-img-thumb">
+                    <img src="img/relaxation_&_festival_img/yoga.jpeg" alt="">
+                </div>
+                <div class="raf-text">
+                    <h3>relaxation</h3>
+                    <h1>Yoga barn</h1>
+                    <a target="_blank" href="https://theyogabarn.com/"><button>Read More</button></a>
+                </div>
+            </div>
+            <div class="raf-img">
+                <div class="raf-img-thumb">
+                    <img src="img/relaxation_&_festival_img/ubud_writers.jpeg" alt="">
+                </div>
+                <div class="raf-text">
+                    <h3>events</h3>
+                    <h1>Ubud Writers & Readers Festival</h1>
+                    <a target="_blank" href="https://www.ubudwritersfestival.com/"><button>Read More</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RELAXATION, ART AND FESTIVAL END -->
+
+    <!-- SEND MESSAGE START -->
+    <section class="send-message-section">
+        <div class="send-message">
+            <div class="send-message-left">
+                <div class="line-container-left">
+                    <span class="line"></span><h3 class="text-royal">Message</h3>
+                </div>
+                <h1>give me your best message about Ubud</h1>
+                <form action="">
+                    <label for="message">Enter your message</label>
+                    <div class="message-items">
+                        <input class="message-input" type="text" id="message" name="message">
+                        <button class="message-btn" type="submit">Send message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="send-message-right">
+                <img src="img/background_img/message.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- SEND MESSAGE END -->
+</main>
+   <!-- MAIN END -->
+
+
+<!-- PAGE DESCRIPTION START -->
+<section id="page-des">
+    <!-- BACKGROUND IMG START -->
+    <section class="bg-img-section">
+        <div class="bg-img">
+            <img id="bg" src="img/destination_img/campuhan_ridge_walk.jpeg" alt="">
+        </div>
+        <div class="bg-img-text">
+            <h1 id="bg-title">campuhan ridge walk</h1>
+        </div>
+    </section>
+    <!-- BACKGROUND IMG END -->
+
+    <!-- CONTENT START -->
+    <section class="content-section">
+        <div class="content">
+            <div class="content-left">
+                <div class="line-container-left">
+                    <span class="line"></span><h3 class="text-royal" id="cnt-des">Campuhan</h3>
+                </div>
+                <div class="title-content">
+                    <h1 class="h1-title" id="cnt-title">Raise a glass to the nature of Kiyosato and the wider Hokuto Area</h1>
+                </div>
+                <div class="description-content">
+                    <p class="p-des" id="cnt-des1">Escape the bustle of city life in this natural idyll boasting the stunning scenery of <span class="span-red">Mt. Yatsugatake</span> , award-winning sake and several high-quality museums.</p>
+                </div>
+                <div class="description-content">
+                    <p class="p-des" id="cnt-des2">Escape the bustle of city life in this natural idyll boasting the stunning scenery of <span class="span-red">Mt. Yatsugatake</span> , award-winning sake and several high-quality museums.</p>
+                </div>
+                <div class="img-content">
+                    <img id="cnt-img" class="img" src="img/destination_img/campuhan_ridge_walk1.jpeg" alt="">
+                </div>
+                <div class="description-content">
+                    <p id="cnt-des3" class="p-des">Escape the bustle of city life in this natural idyll boasting the stunning scenery of Mt. Yatsugatake , award-winning sake and several high-quality museums.</p>
+                </div>
+                <div class="description-content">
+                    <p id="cnt-des4" class="p-des">Escape the bustle of city life in this natural idyll boasting the stunning scenery of Mt. Yatsugatake , award-winning sake and several high-quality museums.</p>
+                </div>
+                <div class="info-content">
+                    <h2 class="h2-info" id="cnt-info">Don't miss</h2>
+                    <ol class="ul-info" >
+                        <li class="li-info" id="cnt-info1">Yamanashi Meijo Brewery and Suntory Hakushu Distillery</li>
+                        <li class="li-info" id="cnt-info2">Kiyosato Field Ballet in the forests of Kiyosato—one of many cultural events that take place each year</li>
+                        <li class="li-info" id="cnt-info3">Fields of sunflowers in Akeno and the flowers around Heidi Village in the summer months</li>
+                    </ol>
+                </div>
+                <div class="fact-content">
+                    <h2 class="h2-fact" id="cnt-price">Quick Facts</h2>
+                    <ul class="ul-fact">
+                        <li class="li-fact" id="cnt-price1">Mt. Yatsugatake means the mountain with eight peaks</li>
+                        <li class="li-fact" id="cnt-price2">The pure waters of this region are used to make high-quality rice, award-winning sake and delicious whisky</li>
+                        <li class="li-fact" id="cnt-price3"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="line-container-left">
+                    <span class="line"></span><h3 class="text-royal" id="cnt-loc">Campuhan Location</h3>
+                </div>
+                <iframe id="cnt-map" src="" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- CONTENT END -->
+
+    <!-- RECOMENDATION DESTINATION START -->
+    <section class="recomendation-destination-section">
+        <h1 class="h1-rec">Recomendation for you</h1>
+        <div class="carousel recommendation-carousel" data-flickity>
+            <a href="">
+                <div class="carousel-item">
+                    <img class="carousel-image" class="carousel-cell" src="img/destination_img/goa_gajah.jpg" alt="">
+                    <h1 class="carousel-title" >Goa Gajah</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="carousel-item">
+                    <img class="carousel-image" class="carousel-cell" src="img/destination_img/monkey_forest_ubud.jpeg" alt="">
+                    <h1 class="carousel-title" >Monkey Forest</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="carousel-item">
+                    <img class="carousel-image" class="carousel-cell" src="img/destination_img/museum_blanco_renaissance.jpeg" alt="">
+                    <h1 class="carousel-title" >museum blanco renaissance</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="carousel-item">
+                    <img class="carousel-image" class="carousel-cell" src="img/destination_img/pasar_seni_ubud.jpeg" alt="">
+                    <h1 class="carousel-title" >Ubud Art Market</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="carousel-item">
+                    <img class="carousel-image" class="carousel-cell" src="img/destination_img/pura_taman_saraswati.jpeg" alt="">
+                    <h1 class="carousel-title" >Pura taman saraswati</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="carousel-item">
+                    <img class="carousel-image" class="carousel-cell" src="img/destination_img/tegalalang_rice.jpeg" alt="">
+                    <h1 class="carousel-title" >Tegalalang Rice Terraces</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="carousel-item">
+                    <img class="carousel-image" class="carousel-cell" src="img/destination_img/ubud_palace.jpeg" alt="">
+                    <h1 class="carousel-title" >Ubud Palace</h1>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- RECOMENDATION DESTINATION END -->
+</section>
+<!-- PAGE DESCRIPTION END -->
+
+    <!-- FOOTER IMG START -->
+    <section class="img-footer-section">
+        <h1>Ubud Journey</h1>
+        <img src="img/footer_img/ubud_journey_img.png" alt="">
+    </section>
+    <!-- FOOTER IMG END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer-section">
+        <div class="footer-img">
+            <img src="img/footer_img/gianyar.png" alt="">
+        </div>
+        <div class="footer-top">
+            <div class="footer-items1">
+                <img src="img/logo/logo_ubud_white.png" alt="">
+                <p>Ubud is the most popular tourist destination located in the center of Bali Island.</p>
+                <div class="footer-icon">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-items2">
+                <h2>Discover</h2>
+                <a href="/destination.html">Destination</a>
+                <a href="/culinary.html">Culinary</a>
+                <a href="/culture.html">Culture</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="footer-items2">
+                <h2>About</h2>
+                <a href="/culture.html">Art & Festival</a>
+                <a href="/culture.html">Spiritual & Relaxation</a>
+            </div>
+            <div class="footer-items1">
+                <h2>Contact</h2>
+                <div class="footer-p">
+                    <p><i class="fa-solid fa-location-dot"></i>Address : Bali</p>
+                </div>
+                <div class="footer-p">
+                    <p><i class="fa-solid fa-envelope"></i>Email : UbudJourney@gmail.com</p>
+                </div>
+                <div class="footer-p">
+                    <p><i class="fa-solid fa-phone"></i>Phone : +62 896 3542 1310</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2024, design and developed by Ketut Agus Suardita. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- CURSOR ANIMATION START -->
+    <div class="circle"></div>
+    <!-- CURSOR ANIMATION END -->
+
+    <!-- SCRIPT JS START -->
+    <script src="js/script.js"></script>
+    <script src="js/destination.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/load.js"></script>
+    <!-- SCRIPT JS END -->
+
+    <!-- SCRIPT FLICKITY START -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- SCRIPT FLICKITY END -->
+    <!-- SCRIPT JQUERY START -->
+    <script>
+    $(document).ready(function() {
+    var options = {
+        accessibility: true,
+        prevNextButtons: true,
+        pageDots: true,
+        setGallerySize: false,
+        autoPlay: 3000,
+        wrapAround: true 
+    };
+
+    var $carousel = $('[data-carousel]').flickity(options);
+    var $slideContent = $('.slide-content');
+    var flkty = $carousel.data('flickity');
+    var selectedSlide = flkty.selectedElement;
+
+    flkty.on('settle', function(index) {
+        selectedSlide = flkty.selectedElement;
+    });
+
+    flkty.on('change', function(index) {
+        $slideContent.eq(index).removeClass('mask');
+
+        setTimeout(function() {
+        $slideContent.addClass('mask');
+        }, 500);
+    });
+
+    flkty.on('dragStart', function(event) {
+        var index = 0;
+        selectedSlide = flkty.selectedElement;
+
+        if (event.layerX > 0) {
+        index = $(selectedSlide).index() + 1;
+        } else {
+        index = $(selectedSlide).index() - 1;
+        }
+
+        $slideContent.eq(index).removeClass('mask');
+    });
+
+    setTimeout(function() {
+        $slideContent.addClass('mask');
+    }, 500);
+    });
+    </script>
+    <!-- SCRIPT JQUERY END -->
+
+    <!-- MIXITUP START -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script>
+        var mixer = mixitup('.container');
+    </script>
+    <!-- MIXITUP END -->
+</body>
+</html>
